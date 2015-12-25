@@ -2,6 +2,6 @@
 
 ##### Instructions
 
-* Run `composer install``
+* Run `composer install`
 * Run `php command.php`
 * Enjoy light show!
