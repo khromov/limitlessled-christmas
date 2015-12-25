@@ -1,0 +1,45 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "66e27be715ae4cee7cec1ebd3eed8348",
+    "content-hash": "1afc91f6eb245e59e356884d8f96750a",
+    "packages": [
+        {
+            "name": "yasharrashedi/limitless-led",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yasharrashedi/LimitlessLED.git",
+                "reference": "217578394c9b89edf3fba93d8a6609ba8e350c39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yasharrashedi/LimitlessLED/zipball/217578394c9b89edf3fba93d8a6609ba8e350c39",
+                "reference": "217578394c9b89edf3fba93d8a6609ba8e350c39",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Milight.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "LimitlessLED/Milight integration library",
+            "time": "2015-10-24 06:31:58"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "yasharrashedi/limitless-led": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
