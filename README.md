@@ -4,4 +4,4 @@
 
 * Run `composer install`
 * Run `php command.php`
-* Enjoy light show!
+* Enjoy the light show!
