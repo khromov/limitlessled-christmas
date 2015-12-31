@@ -22,6 +22,11 @@ while(true) {
         $lights->set_color($lights->get_rotated_rgb_color($i), 0);
     }
 
+    //Make the rotations crazy!
+    for($i = 0; $i <= 64; $i++) {
+        $lights->set_color($lights->get_rotated_rgb_color($i), 0, $lights->get_rotated_group_number($i));
+    }
+
     echo "Did rotation!" . PHP_EOL;
 }
 
@@ -74,15 +79,6 @@ class ChristmasLights {
         }
     }
 
-    /**
-     * Jumbles group colors
-     *
-     * @param $wait
-     */
-    function color_jumble($wait) {
-
-    }
-
     function get_rotated_rgb_color($index) {
         $colors = [
             'ff0000',
@@ -91,5 +87,11 @@ class ChristmasLights {
         ];
 
         return $colors[$index%sizeof($colors)];
+    }
+
+    function get_rotated_group_number($index) {
+        $groups = [1,2,3,4];
+
+        return $groups[$index%sizeof($groups)];
     }
 }
