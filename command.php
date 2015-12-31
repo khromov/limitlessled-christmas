@@ -4,7 +4,7 @@ include 'bootstrap.php';
 echo "Starting program!" . PHP_EOL;
 
 //Init
-$lights = new ChristmasLights('192.168.2.63');
+$lights = new ChristmasLights(MILIGHT_WIFI_BRIDGE_IP);
 $groups = [1,2,3,4];
 
 //Do the christmas dance!
