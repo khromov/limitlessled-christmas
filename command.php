@@ -11,20 +11,20 @@ $groups = [1,2,3,4];
 while(true) {
 
     for($i = 0; $i <= 6; $i++) {
-        $lights->set_color($lights->get_rotated_rgb_color($i), 1000);
+        $lights->set_color($lights->get_rotated_hex_color($i), 1000);
     }
 
-    for($i = 0; $i <= 12; $i++) {
-        $lights->set_color($lights->get_rotated_rgb_color($i), 500);
+    for($i = 1; $i <= 13; $i++) {
+        $lights->set_color($lights->get_rotated_hex_color($i), 500);
     }
 
-    for($i = 0; $i <= 24; $i++) {
-        $lights->set_color($lights->get_rotated_rgb_color($i), 0);
+    for($i = 2; $i <= 26; $i++) {
+        $lights->set_color($lights->get_rotated_hex_color($i), 0);
     }
 
     //Make the rotations crazy!
-    for($i = 0; $i <= 64; $i++) {
-        $lights->set_color($lights->get_rotated_rgb_color($i), 0, $lights->get_rotated_group_number($i));
+    for($i = 3; $i <= 67; $i++) {
+        $lights->set_color($lights->get_rotated_hex_color($i), 0, $lights->get_rotated_group_number($i));
     }
 
     echo "Did rotation!" . PHP_EOL;
@@ -79,7 +79,12 @@ class ChristmasLights {
         }
     }
 
-    function get_rotated_rgb_color($index) {
+    function get_random_hex_color() {
+        return sprintf('#%06X', mt_rand(0, 0xFFFFFF));
+    }
+
+    function get_rotated_hex_color($index) {
+
         $colors = [
             'ff0000',
             '00ff00',
